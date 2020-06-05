@@ -15,7 +15,7 @@ class FinishedFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         //This lines make it able to connect this fragment with the Recyclerview
-        val listItems: View = inflater.inflate(R.layout.fragment_in_progress, container, false)
+        val listItems: View = inflater.inflate(R.layout.fragment_finished, container, false)
         val rv_content_frag_finished = listItems.findViewById<View>(R.id.rv_fragment_finished) as RecyclerView
 
         rv_content_frag_finished.layoutManager = LinearLayoutManager(this.context)
